@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header>
+        <header id="header">
             <h1>Fotografia artystyczna</h1>
         </header>
         <section id="photos">
@@ -22,42 +22,39 @@
             <img src="9.jpg" alt="obrazy do sprzedaży" title="9.jpg" />
             <img src="10.jpg" alt="obrazy do sprzedaży" title="10.jpg" />
         </section>
-        <main>
+        <main id="main">
             <section id="left">
                 <h3>Zamówienie</h3>
                 <label>
                     Wybierz obraz:
-                    <input type="file" id="file" accept="image/jpeg" />
-                </label>
+                    <input type="file" name="" id="file" accept="image/jpeg"
+                /></label>
                 <br />
                 <label>
-                    Liczba kopii: <input type="number" id="number" />
+                    Liczba kopii:
+                    <input type="number" name="number" id="number" />
                 </label>
                 <br />
                 <label>
                     <input
                         type="radio"
-                        name="type"
-                        id="radio1"
+                        name="paper"
+                        id="błyszczący"
                         value="błyszczący"
                         checked
-                    />
-                    Papier błyszczący
+                    />Papier błyszczący
                 </label>
                 <br />
-                <label
-                    ><input
+                <label>
+                    <input
                         type="radio"
-                        name="type"
-                        id="radio2"
+                        name="paper"
+                        id="matowy"
                         value="matowy"
-                    />
-                    Papier matowy</label
-                >
+                    />Papier matowy
+                </label>
                 <br />
-                <button id="button" onclick="addToCart()">
-                    Dodaj do koszyka
-                </button>
+                <button id="button">Dodaj do koszyka</button>
             </section>
             <nav id="nav">
                 <ul>
@@ -71,8 +68,8 @@
                 <div id="cart"></div>
             </section>
         </main>
-        <footer>
-            <p>Autor strony: <em>Adam Kurzawa</em></p>
+        <footer id="footer">
+            <p>Stronę wykonał: <em>1234567890</em></p>
         </footer>
         <script src="script.js"></script>
     </body>

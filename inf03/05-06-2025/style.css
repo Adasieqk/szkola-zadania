@@ -7,8 +7,8 @@ body {
     margin: 0;
 }
 
-header,
-footer {
+#header,
+#footer {
     background-color: sienna;
     color: white;
     padding: 5px;
@@ -28,7 +28,7 @@ footer {
 
 #nav {
     width: 50%;
-    height: 50%;
+    height: 50px;
     float: left;
 }
 
@@ -39,7 +39,7 @@ footer {
 }
 
 #number,
-button {
+#add {
     margin-top: 20px;
 }
 
